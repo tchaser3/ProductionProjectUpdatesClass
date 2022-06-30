@@ -20,17 +20,17 @@ namespace ProductionProjectUpdatesDLL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("ProductionProjectUpdatesDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("FindProductionProjectUpdatesForStatsDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class ProductionProjectUpdatesDataSet : global::System.Data.DataSet {
+    public partial class FindProductionProjectUpdatesForStatsDataSet : global::System.Data.DataSet {
         
-        private productionprojectupdatesDataTable tableproductionprojectupdates;
+        private FindProductionProjectUpdatesforStatsDataTable tableFindProductionProjectUpdatesforStats;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public ProductionProjectUpdatesDataSet() {
+        public FindProductionProjectUpdatesForStatsDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ProductionProjectUpdatesDLL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected ProductionProjectUpdatesDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected FindProductionProjectUpdatesForStatsDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace ProductionProjectUpdatesDLL {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["productionprojectupdates"] != null)) {
-                    base.Tables.Add(new productionprojectupdatesDataTable(ds.Tables["productionprojectupdates"]));
+                if ((ds.Tables["FindProductionProjectUpdatesforStats"] != null)) {
+                    base.Tables.Add(new FindProductionProjectUpdatesforStatsDataTable(ds.Tables["FindProductionProjectUpdatesforStats"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace ProductionProjectUpdatesDLL {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public productionprojectupdatesDataTable productionprojectupdates {
+        public FindProductionProjectUpdatesforStatsDataTable FindProductionProjectUpdatesforStats {
             get {
-                return this.tableproductionprojectupdates;
+                return this.tableFindProductionProjectUpdatesforStats;
             }
         }
         
@@ -127,7 +127,7 @@ namespace ProductionProjectUpdatesDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            ProductionProjectUpdatesDataSet cln = ((ProductionProjectUpdatesDataSet)(base.Clone()));
+            FindProductionProjectUpdatesForStatsDataSet cln = ((FindProductionProjectUpdatesForStatsDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace ProductionProjectUpdatesDLL {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["productionprojectupdates"] != null)) {
-                    base.Tables.Add(new productionprojectupdatesDataTable(ds.Tables["productionprojectupdates"]));
+                if ((ds.Tables["FindProductionProjectUpdatesforStats"] != null)) {
+                    base.Tables.Add(new FindProductionProjectUpdatesforStatsDataTable(ds.Tables["FindProductionProjectUpdatesforStats"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace ProductionProjectUpdatesDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableproductionprojectupdates = ((productionprojectupdatesDataTable)(base.Tables["productionprojectupdates"]));
+            this.tableFindProductionProjectUpdatesforStats = ((FindProductionProjectUpdatesforStatsDataTable)(base.Tables["FindProductionProjectUpdatesforStats"]));
             if ((initTable == true)) {
-                if ((this.tableproductionprojectupdates != null)) {
-                    this.tableproductionprojectupdates.InitVars();
+                if ((this.tableFindProductionProjectUpdatesforStats != null)) {
+                    this.tableFindProductionProjectUpdatesforStats.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace ProductionProjectUpdatesDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "ProductionProjectUpdatesDataSet";
+            this.DataSetName = "FindProductionProjectUpdatesForStatsDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/ProductionProjectUpdatesDataSet.xsd";
+            this.Namespace = "http://tempuri.org/FindProductionProjectUpdatesForStatsDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableproductionprojectupdates = new productionprojectupdatesDataTable();
-            base.Tables.Add(this.tableproductionprojectupdates);
+            this.tableFindProductionProjectUpdatesforStats = new FindProductionProjectUpdatesforStatsDataTable();
+            base.Tables.Add(this.tableFindProductionProjectUpdatesforStats);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeproductionprojectupdates() {
+        private bool ShouldSerializeFindProductionProjectUpdatesforStats() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace ProductionProjectUpdatesDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            ProductionProjectUpdatesDataSet ds = new ProductionProjectUpdatesDataSet();
+            FindProductionProjectUpdatesForStatsDataSet ds = new FindProductionProjectUpdatesForStatsDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,29 +270,37 @@ namespace ProductionProjectUpdatesDLL {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void productionprojectupdatesRowChangeEventHandler(object sender, productionprojectupdatesRowChangeEvent e);
+        public delegate void FindProductionProjectUpdatesforStatsRowChangeEventHandler(object sender, FindProductionProjectUpdatesforStatsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class productionprojectupdatesDataTable : global::System.Data.TypedTableBase<productionprojectupdatesRow> {
-            
-            private global::System.Data.DataColumn columnTransactionID;
-            
-            private global::System.Data.DataColumn columnProjectID;
-            
-            private global::System.Data.DataColumn columnEmployeeID;
+        public partial class FindProductionProjectUpdatesforStatsDataTable : global::System.Data.TypedTableBase<FindProductionProjectUpdatesforStatsRow> {
             
             private global::System.Data.DataColumn columnTransactionDate;
+            
+            private global::System.Data.DataColumn columnCustomerAssignedID;
+            
+            private global::System.Data.DataColumn columnAssignedProjectID;
+            
+            private global::System.Data.DataColumn columnProjectName;
+            
+            private global::System.Data.DataColumn columnECDDate;
+            
+            private global::System.Data.DataColumn columnWorkOrderStatus;
+            
+            private global::System.Data.DataColumn columnFirstName;
+            
+            private global::System.Data.DataColumn columnLastName;
             
             private global::System.Data.DataColumn columnProjectUpdate;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public productionprojectupdatesDataTable() {
-                this.TableName = "productionprojectupdates";
+            public FindProductionProjectUpdatesforStatsDataTable() {
+                this.TableName = "FindProductionProjectUpdatesforStats";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -300,7 +308,7 @@ namespace ProductionProjectUpdatesDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal productionprojectupdatesDataTable(global::System.Data.DataTable table) {
+            internal FindProductionProjectUpdatesforStatsDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -317,33 +325,9 @@ namespace ProductionProjectUpdatesDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected productionprojectupdatesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected FindProductionProjectUpdatesforStatsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TransactionIDColumn {
-                get {
-                    return this.columnTransactionID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ProjectIDColumn {
-                get {
-                    return this.columnProjectID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn EmployeeIDColumn {
-                get {
-                    return this.columnEmployeeID;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -351,6 +335,62 @@ namespace ProductionProjectUpdatesDLL {
             public global::System.Data.DataColumn TransactionDateColumn {
                 get {
                     return this.columnTransactionDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CustomerAssignedIDColumn {
+                get {
+                    return this.columnCustomerAssignedID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AssignedProjectIDColumn {
+                get {
+                    return this.columnAssignedProjectID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ProjectNameColumn {
+                get {
+                    return this.columnProjectName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ECDDateColumn {
+                get {
+                    return this.columnECDDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WorkOrderStatusColumn {
+                get {
+                    return this.columnWorkOrderStatus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FirstNameColumn {
+                get {
+                    return this.columnFirstName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn LastNameColumn {
+                get {
+                    return this.columnLastName;
                 }
             }
             
@@ -373,56 +413,53 @@ namespace ProductionProjectUpdatesDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public productionprojectupdatesRow this[int index] {
+            public FindProductionProjectUpdatesforStatsRow this[int index] {
                 get {
-                    return ((productionprojectupdatesRow)(this.Rows[index]));
+                    return ((FindProductionProjectUpdatesforStatsRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event productionprojectupdatesRowChangeEventHandler productionprojectupdatesRowChanging;
+            public event FindProductionProjectUpdatesforStatsRowChangeEventHandler FindProductionProjectUpdatesforStatsRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event productionprojectupdatesRowChangeEventHandler productionprojectupdatesRowChanged;
+            public event FindProductionProjectUpdatesforStatsRowChangeEventHandler FindProductionProjectUpdatesforStatsRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event productionprojectupdatesRowChangeEventHandler productionprojectupdatesRowDeleting;
+            public event FindProductionProjectUpdatesforStatsRowChangeEventHandler FindProductionProjectUpdatesforStatsRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event productionprojectupdatesRowChangeEventHandler productionprojectupdatesRowDeleted;
+            public event FindProductionProjectUpdatesforStatsRowChangeEventHandler FindProductionProjectUpdatesforStatsRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddproductionprojectupdatesRow(productionprojectupdatesRow row) {
+            public void AddFindProductionProjectUpdatesforStatsRow(FindProductionProjectUpdatesforStatsRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public productionprojectupdatesRow AddproductionprojectupdatesRow(int ProjectID, int EmployeeID, System.DateTime TransactionDate, string ProjectUpdate) {
-                productionprojectupdatesRow rowproductionprojectupdatesRow = ((productionprojectupdatesRow)(this.NewRow()));
+            public FindProductionProjectUpdatesforStatsRow AddFindProductionProjectUpdatesforStatsRow(System.DateTime TransactionDate, string CustomerAssignedID, string AssignedProjectID, string ProjectName, System.DateTime ECDDate, string WorkOrderStatus, string FirstName, string LastName, string ProjectUpdate) {
+                FindProductionProjectUpdatesforStatsRow rowFindProductionProjectUpdatesforStatsRow = ((FindProductionProjectUpdatesforStatsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        ProjectID,
-                        EmployeeID,
                         TransactionDate,
+                        CustomerAssignedID,
+                        AssignedProjectID,
+                        ProjectName,
+                        ECDDate,
+                        WorkOrderStatus,
+                        FirstName,
+                        LastName,
                         ProjectUpdate};
-                rowproductionprojectupdatesRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowproductionprojectupdatesRow);
-                return rowproductionprojectupdatesRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public productionprojectupdatesRow FindByTransactionID(int TransactionID) {
-                return ((productionprojectupdatesRow)(this.Rows.Find(new object[] {
-                            TransactionID})));
+                rowFindProductionProjectUpdatesforStatsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowFindProductionProjectUpdatesforStatsRow);
+                return rowFindProductionProjectUpdatesforStatsRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                productionprojectupdatesDataTable cln = ((productionprojectupdatesDataTable)(base.Clone()));
+                FindProductionProjectUpdatesforStatsDataTable cln = ((FindProductionProjectUpdatesforStatsDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -430,71 +467,85 @@ namespace ProductionProjectUpdatesDLL {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new productionprojectupdatesDataTable();
+                return new FindProductionProjectUpdatesforStatsDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnTransactionID = base.Columns["TransactionID"];
-                this.columnProjectID = base.Columns["ProjectID"];
-                this.columnEmployeeID = base.Columns["EmployeeID"];
                 this.columnTransactionDate = base.Columns["TransactionDate"];
+                this.columnCustomerAssignedID = base.Columns["CustomerAssignedID"];
+                this.columnAssignedProjectID = base.Columns["AssignedProjectID"];
+                this.columnProjectName = base.Columns["ProjectName"];
+                this.columnECDDate = base.Columns["ECDDate"];
+                this.columnWorkOrderStatus = base.Columns["WorkOrderStatus"];
+                this.columnFirstName = base.Columns["FirstName"];
+                this.columnLastName = base.Columns["LastName"];
                 this.columnProjectUpdate = base.Columns["ProjectUpdate"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnTransactionID = new global::System.Data.DataColumn("TransactionID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransactionID);
-                this.columnProjectID = new global::System.Data.DataColumn("ProjectID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProjectID);
-                this.columnEmployeeID = new global::System.Data.DataColumn("EmployeeID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEmployeeID);
                 this.columnTransactionDate = new global::System.Data.DataColumn("TransactionDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransactionDate);
+                this.columnCustomerAssignedID = new global::System.Data.DataColumn("CustomerAssignedID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCustomerAssignedID);
+                this.columnAssignedProjectID = new global::System.Data.DataColumn("AssignedProjectID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAssignedProjectID);
+                this.columnProjectName = new global::System.Data.DataColumn("ProjectName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProjectName);
+                this.columnECDDate = new global::System.Data.DataColumn("ECDDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnECDDate);
+                this.columnWorkOrderStatus = new global::System.Data.DataColumn("WorkOrderStatus", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWorkOrderStatus);
+                this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFirstName);
+                this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLastName);
                 this.columnProjectUpdate = new global::System.Data.DataColumn("ProjectUpdate", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProjectUpdate);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnTransactionID}, true));
-                this.columnTransactionID.AutoIncrement = true;
-                this.columnTransactionID.AutoIncrementSeed = -1;
-                this.columnTransactionID.AutoIncrementStep = -1;
-                this.columnTransactionID.AllowDBNull = false;
-                this.columnTransactionID.ReadOnly = true;
-                this.columnTransactionID.Unique = true;
-                this.columnProjectID.AllowDBNull = false;
-                this.columnEmployeeID.AllowDBNull = false;
                 this.columnTransactionDate.AllowDBNull = false;
+                this.columnCustomerAssignedID.AllowDBNull = false;
+                this.columnCustomerAssignedID.MaxLength = 2147483647;
+                this.columnAssignedProjectID.AllowDBNull = false;
+                this.columnAssignedProjectID.MaxLength = 2147483647;
+                this.columnProjectName.AllowDBNull = false;
+                this.columnProjectName.MaxLength = 2147483647;
+                this.columnWorkOrderStatus.AllowDBNull = false;
+                this.columnWorkOrderStatus.MaxLength = 2147483647;
+                this.columnFirstName.AllowDBNull = false;
+                this.columnFirstName.MaxLength = 2147483647;
+                this.columnLastName.AllowDBNull = false;
+                this.columnLastName.MaxLength = 2147483647;
                 this.columnProjectUpdate.AllowDBNull = false;
                 this.columnProjectUpdate.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public productionprojectupdatesRow NewproductionprojectupdatesRow() {
-                return ((productionprojectupdatesRow)(this.NewRow()));
+            public FindProductionProjectUpdatesforStatsRow NewFindProductionProjectUpdatesforStatsRow() {
+                return ((FindProductionProjectUpdatesforStatsRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new productionprojectupdatesRow(builder);
+                return new FindProductionProjectUpdatesforStatsRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(productionprojectupdatesRow);
+                return typeof(FindProductionProjectUpdatesforStatsRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.productionprojectupdatesRowChanged != null)) {
-                    this.productionprojectupdatesRowChanged(this, new productionprojectupdatesRowChangeEvent(((productionprojectupdatesRow)(e.Row)), e.Action));
+                if ((this.FindProductionProjectUpdatesforStatsRowChanged != null)) {
+                    this.FindProductionProjectUpdatesforStatsRowChanged(this, new FindProductionProjectUpdatesforStatsRowChangeEvent(((FindProductionProjectUpdatesforStatsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -502,8 +553,8 @@ namespace ProductionProjectUpdatesDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.productionprojectupdatesRowChanging != null)) {
-                    this.productionprojectupdatesRowChanging(this, new productionprojectupdatesRowChangeEvent(((productionprojectupdatesRow)(e.Row)), e.Action));
+                if ((this.FindProductionProjectUpdatesforStatsRowChanging != null)) {
+                    this.FindProductionProjectUpdatesforStatsRowChanging(this, new FindProductionProjectUpdatesforStatsRowChangeEvent(((FindProductionProjectUpdatesforStatsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -511,8 +562,8 @@ namespace ProductionProjectUpdatesDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.productionprojectupdatesRowDeleted != null)) {
-                    this.productionprojectupdatesRowDeleted(this, new productionprojectupdatesRowChangeEvent(((productionprojectupdatesRow)(e.Row)), e.Action));
+                if ((this.FindProductionProjectUpdatesforStatsRowDeleted != null)) {
+                    this.FindProductionProjectUpdatesforStatsRowDeleted(this, new FindProductionProjectUpdatesforStatsRowChangeEvent(((FindProductionProjectUpdatesforStatsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -520,14 +571,14 @@ namespace ProductionProjectUpdatesDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.productionprojectupdatesRowDeleting != null)) {
-                    this.productionprojectupdatesRowDeleting(this, new productionprojectupdatesRowChangeEvent(((productionprojectupdatesRow)(e.Row)), e.Action));
+                if ((this.FindProductionProjectUpdatesforStatsRowDeleting != null)) {
+                    this.FindProductionProjectUpdatesforStatsRowDeleting(this, new FindProductionProjectUpdatesforStatsRowChangeEvent(((FindProductionProjectUpdatesforStatsRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveproductionprojectupdatesRow(productionprojectupdatesRow row) {
+            public void RemoveFindProductionProjectUpdatesforStatsRow(FindProductionProjectUpdatesforStatsRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -536,7 +587,7 @@ namespace ProductionProjectUpdatesDLL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ProductionProjectUpdatesDataSet ds = new ProductionProjectUpdatesDataSet();
+                FindProductionProjectUpdatesForStatsDataSet ds = new FindProductionProjectUpdatesForStatsDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -554,7 +605,7 @@ namespace ProductionProjectUpdatesDLL {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "productionprojectupdatesDataTable";
+                attribute2.FixedValue = "FindProductionProjectUpdatesforStatsDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -598,58 +649,108 @@ namespace ProductionProjectUpdatesDLL {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class productionprojectupdatesRow : global::System.Data.DataRow {
+        public partial class FindProductionProjectUpdatesforStatsRow : global::System.Data.DataRow {
             
-            private productionprojectupdatesDataTable tableproductionprojectupdates;
+            private FindProductionProjectUpdatesforStatsDataTable tableFindProductionProjectUpdatesforStats;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal productionprojectupdatesRow(global::System.Data.DataRowBuilder rb) : 
+            internal FindProductionProjectUpdatesforStatsRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableproductionprojectupdates = ((productionprojectupdatesDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int TransactionID {
-                get {
-                    return ((int)(this[this.tableproductionprojectupdates.TransactionIDColumn]));
-                }
-                set {
-                    this[this.tableproductionprojectupdates.TransactionIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int ProjectID {
-                get {
-                    return ((int)(this[this.tableproductionprojectupdates.ProjectIDColumn]));
-                }
-                set {
-                    this[this.tableproductionprojectupdates.ProjectIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int EmployeeID {
-                get {
-                    return ((int)(this[this.tableproductionprojectupdates.EmployeeIDColumn]));
-                }
-                set {
-                    this[this.tableproductionprojectupdates.EmployeeIDColumn] = value;
-                }
+                this.tableFindProductionProjectUpdatesforStats = ((FindProductionProjectUpdatesforStatsDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public System.DateTime TransactionDate {
                 get {
-                    return ((global::System.DateTime)(this[this.tableproductionprojectupdates.TransactionDateColumn]));
+                    return ((global::System.DateTime)(this[this.tableFindProductionProjectUpdatesforStats.TransactionDateColumn]));
                 }
                 set {
-                    this[this.tableproductionprojectupdates.TransactionDateColumn] = value;
+                    this[this.tableFindProductionProjectUpdatesforStats.TransactionDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CustomerAssignedID {
+                get {
+                    return ((string)(this[this.tableFindProductionProjectUpdatesforStats.CustomerAssignedIDColumn]));
+                }
+                set {
+                    this[this.tableFindProductionProjectUpdatesforStats.CustomerAssignedIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string AssignedProjectID {
+                get {
+                    return ((string)(this[this.tableFindProductionProjectUpdatesforStats.AssignedProjectIDColumn]));
+                }
+                set {
+                    this[this.tableFindProductionProjectUpdatesforStats.AssignedProjectIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ProjectName {
+                get {
+                    return ((string)(this[this.tableFindProductionProjectUpdatesforStats.ProjectNameColumn]));
+                }
+                set {
+                    this[this.tableFindProductionProjectUpdatesforStats.ProjectNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime ECDDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableFindProductionProjectUpdatesforStats.ECDDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ECDDate\' in table \'FindProductionProjectUpdatesforStats\' is" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFindProductionProjectUpdatesforStats.ECDDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string WorkOrderStatus {
+                get {
+                    return ((string)(this[this.tableFindProductionProjectUpdatesforStats.WorkOrderStatusColumn]));
+                }
+                set {
+                    this[this.tableFindProductionProjectUpdatesforStats.WorkOrderStatusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string FirstName {
+                get {
+                    return ((string)(this[this.tableFindProductionProjectUpdatesforStats.FirstNameColumn]));
+                }
+                set {
+                    this[this.tableFindProductionProjectUpdatesforStats.FirstNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string LastName {
+                get {
+                    return ((string)(this[this.tableFindProductionProjectUpdatesforStats.LastNameColumn]));
+                }
+                set {
+                    this[this.tableFindProductionProjectUpdatesforStats.LastNameColumn] = value;
                 }
             }
             
@@ -657,11 +758,23 @@ namespace ProductionProjectUpdatesDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string ProjectUpdate {
                 get {
-                    return ((string)(this[this.tableproductionprojectupdates.ProjectUpdateColumn]));
+                    return ((string)(this[this.tableFindProductionProjectUpdatesforStats.ProjectUpdateColumn]));
                 }
                 set {
-                    this[this.tableproductionprojectupdates.ProjectUpdateColumn] = value;
+                    this[this.tableFindProductionProjectUpdatesforStats.ProjectUpdateColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsECDDateNull() {
+                return this.IsNull(this.tableFindProductionProjectUpdatesforStats.ECDDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetECDDateNull() {
+                this[this.tableFindProductionProjectUpdatesforStats.ECDDateColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -669,22 +782,22 @@ namespace ProductionProjectUpdatesDLL {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class productionprojectupdatesRowChangeEvent : global::System.EventArgs {
+        public class FindProductionProjectUpdatesforStatsRowChangeEvent : global::System.EventArgs {
             
-            private productionprojectupdatesRow eventRow;
+            private FindProductionProjectUpdatesforStatsRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public productionprojectupdatesRowChangeEvent(productionprojectupdatesRow row, global::System.Data.DataRowAction action) {
+            public FindProductionProjectUpdatesforStatsRowChangeEvent(FindProductionProjectUpdatesforStatsRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public productionprojectupdatesRow Row {
+            public FindProductionProjectUpdatesforStatsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -700,7 +813,7 @@ namespace ProductionProjectUpdatesDLL {
         }
     }
 }
-namespace ProductionProjectUpdatesDLL.ProductionProjectUpdatesDataSetTableAdapters {
+namespace ProductionProjectUpdatesDLL.FindProductionProjectUpdatesForStatsDataSetTableAdapters {
     
     
     /// <summary>
@@ -712,7 +825,7 @@ namespace ProductionProjectUpdatesDLL.ProductionProjectUpdatesDataSetTableAdapte
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class productionprojectupdatesTableAdapter : global::System.ComponentModel.Component {
+    public partial class FindProductionProjectUpdatesforStatsTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -726,7 +839,7 @@ namespace ProductionProjectUpdatesDLL.ProductionProjectUpdatesDataSetTableAdapte
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public productionprojectupdatesTableAdapter() {
+        public FindProductionProjectUpdatesforStatsTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -823,46 +936,17 @@ namespace ProductionProjectUpdatesDLL.ProductionProjectUpdatesDataSetTableAdapte
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "productionprojectupdates";
-            tableMapping.ColumnMappings.Add("TransactionID", "TransactionID");
-            tableMapping.ColumnMappings.Add("ProjectID", "ProjectID");
-            tableMapping.ColumnMappings.Add("EmployeeID", "EmployeeID");
+            tableMapping.DataSetTable = "FindProductionProjectUpdatesforStats";
             tableMapping.ColumnMappings.Add("TransactionDate", "TransactionDate");
+            tableMapping.ColumnMappings.Add("CustomerAssignedID", "CustomerAssignedID");
+            tableMapping.ColumnMappings.Add("AssignedProjectID", "AssignedProjectID");
+            tableMapping.ColumnMappings.Add("ProjectName", "ProjectName");
+            tableMapping.ColumnMappings.Add("ECDDate", "ECDDate");
+            tableMapping.ColumnMappings.Add("WorkOrderStatus", "WorkOrderStatus");
+            tableMapping.ColumnMappings.Add("FirstName", "FirstName");
+            tableMapping.ColumnMappings.Add("LastName", "LastName");
             tableMapping.ColumnMappings.Add("ProjectUpdate", "ProjectUpdate");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[productionprojectupdates] WHERE (([TransactionID] = @Original_" +
-                "TransactionID) AND ([ProjectID] = @Original_ProjectID) AND ([EmployeeID] = @Orig" +
-                "inal_EmployeeID) AND ([TransactionDate] = @Original_TransactionDate))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TransactionID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProjectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TransactionDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[productionprojectupdates] ([ProjectID], [EmployeeID], [TransactionDate], [ProjectUpdate]) VALUES (@ProjectID, @EmployeeID, @TransactionDate, @ProjectUpdate);
-SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM productionprojectupdates WHERE (TransactionID = SCOPE_IDENTITY())";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TransactionDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectUpdate", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectUpdate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[productionprojectupdates] SET [ProjectID] = @ProjectID, [EmployeeID] = @EmployeeID, [TransactionDate] = @TransactionDate, [ProjectUpdate] = @ProjectUpdate WHERE (([TransactionID] = @Original_TransactionID) AND ([ProjectID] = @Original_ProjectID) AND ([EmployeeID] = @Original_EmployeeID) AND ([TransactionDate] = @Original_TransactionDate));
-SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM productionprojectupdates WHERE (TransactionID = @TransactionID)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TransactionDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectUpdate", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectUpdate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TransactionID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProjectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EmployeeID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TransactionDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TransactionID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -878,16 +962,16 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM " +
-                "dbo.productionprojectupdates";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].CommandText = "dbo.FindProductionProjectUpdatesforStats";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ProductionProjectUpdatesDataSet.productionprojectupdatesDataTable dataTable) {
+        public virtual int Fill(FindProductionProjectUpdatesForStatsDataSet.FindProductionProjectUpdatesforStatsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -900,138 +984,11 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ProductionProjectUpdatesDataSet.productionprojectupdatesDataTable GetData() {
+        public virtual FindProductionProjectUpdatesForStatsDataSet.FindProductionProjectUpdatesforStatsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            ProductionProjectUpdatesDataSet.productionprojectupdatesDataTable dataTable = new ProductionProjectUpdatesDataSet.productionprojectupdatesDataTable();
+            FindProductionProjectUpdatesForStatsDataSet.FindProductionProjectUpdatesforStatsDataTable dataTable = new FindProductionProjectUpdatesForStatsDataSet.FindProductionProjectUpdatesforStatsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ProductionProjectUpdatesDataSet.productionprojectupdatesDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ProductionProjectUpdatesDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "productionprojectupdates");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_TransactionID, int Original_ProjectID, int Original_EmployeeID, System.DateTime Original_TransactionDate) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_TransactionID));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_ProjectID));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_EmployeeID));
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((System.DateTime)(Original_TransactionDate));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int ProjectID, int EmployeeID, System.DateTime TransactionDate, string ProjectUpdate) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ProjectID));
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(EmployeeID));
-            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(TransactionDate));
-            if ((ProjectUpdate == null)) {
-                throw new global::System.ArgumentNullException("ProjectUpdate");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(ProjectUpdate));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int ProjectID, int EmployeeID, System.DateTime TransactionDate, string ProjectUpdate, int Original_TransactionID, int Original_ProjectID, int Original_EmployeeID, System.DateTime Original_TransactionDate, int TransactionID) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ProjectID));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(EmployeeID));
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(TransactionDate));
-            if ((ProjectUpdate == null)) {
-                throw new global::System.ArgumentNullException("ProjectUpdate");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(ProjectUpdate));
-            }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_TransactionID));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_ProjectID));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_EmployeeID));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(Original_TransactionDate));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(TransactionID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int ProjectID, int EmployeeID, System.DateTime TransactionDate, string ProjectUpdate, int Original_TransactionID, int Original_ProjectID, int Original_EmployeeID, System.DateTime Original_TransactionDate) {
-            return this.Update(ProjectID, EmployeeID, TransactionDate, ProjectUpdate, Original_TransactionID, Original_ProjectID, Original_EmployeeID, Original_TransactionDate, Original_TransactionID);
         }
     }
     
@@ -1047,8 +1004,6 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
         
         private UpdateOrderOption _updateOrder;
         
-        private productionprojectupdatesTableAdapter _productionprojectupdatesTableAdapter;
-        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -1061,20 +1016,6 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
             }
             set {
                 this._updateOrder = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public productionprojectupdatesTableAdapter productionprojectupdatesTableAdapter {
-            get {
-                return this._productionprojectupdatesTableAdapter;
-            }
-            set {
-                this._productionprojectupdatesTableAdapter = value;
             }
         }
         
@@ -1097,10 +1038,6 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._productionprojectupdatesTableAdapter != null) 
-                            && (this._productionprojectupdatesTableAdapter.Connection != null))) {
-                    return this._productionprojectupdatesTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -1114,9 +1051,6 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._productionprojectupdatesTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 return count;
             }
         }
@@ -1126,17 +1060,8 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(ProductionProjectUpdatesDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(FindProductionProjectUpdatesForStatsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._productionprojectupdatesTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.productionprojectupdates.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._productionprojectupdatesTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -1145,16 +1070,8 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(ProductionProjectUpdatesDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(FindProductionProjectUpdatesForStatsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._productionprojectupdatesTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.productionprojectupdates.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._productionprojectupdatesTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -1163,16 +1080,8 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(ProductionProjectUpdatesDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(FindProductionProjectUpdatesForStatsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._productionprojectupdatesTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.productionprojectupdates.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._productionprojectupdatesTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             return result;
         }
         
@@ -1205,17 +1114,12 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(ProductionProjectUpdatesDataSet dataSet) {
+        public virtual int UpdateAll(FindProductionProjectUpdatesForStatsDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
-            }
-            if (((this._productionprojectupdatesTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._productionprojectupdatesTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1249,15 +1153,6 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._productionprojectupdatesTableAdapter != null)) {
-                    revertConnections.Add(this._productionprojectupdatesTableAdapter, this._productionprojectupdatesTableAdapter.Connection);
-                    this._productionprojectupdatesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._productionprojectupdatesTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._productionprojectupdatesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._productionprojectupdatesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._productionprojectupdatesTableAdapter.Adapter);
-                    }
-                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1315,10 +1210,6 @@ SELECT TransactionID, ProjectID, EmployeeID, TransactionDate, ProjectUpdate FROM
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
-                }
-                if ((this._productionprojectupdatesTableAdapter != null)) {
-                    this._productionprojectupdatesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._productionprojectupdatesTableAdapter]));
-                    this._productionprojectupdatesTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProductionProjectUpdatesDLL</RootNamespace>
     <AssemblyName>ProductionProjectUpdatesDLL</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,6 +50,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindProductionProjectUpdateByProjectIDDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindProductionProjectUpdatesForStatsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProductionProjectUpdatesForStatsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="InsertProductionProjectUpdateEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +85,17 @@
     </None>
     <None Include="FindProductionProjectUpdateByProjectIDDataSet.xss">
       <DependentUpon>FindProductionProjectUpdateByProjectIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProductionProjectUpdatesForStatsDataSet.xsc">
+      <DependentUpon>FindProductionProjectUpdatesForStatsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProductionProjectUpdatesForStatsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProductionProjectUpdatesForStatsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProductionProjectUpdatesForStatsDataSet.xss">
+      <DependentUpon>FindProductionProjectUpdatesForStatsDataSet.xsd</DependentUpon>
     </None>
     <None Include="InsertProductionProjectUpdateEntry.xsc">
       <DependentUpon>InsertProductionProjectUpdateEntry.xsd</DependentUpon>

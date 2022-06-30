@@ -26,6 +26,24 @@ namespace ProductionProjectUpdatesDLL
         FindProductionProjectUpdateByProjectIDDataSet aFindProductionProjectUpdateByProjectIDDataSet;
         FindProductionProjectUpdateByProjectIDDataSetTableAdapters.FindProductionProjectUpdatesByProjectIDTableAdapter aFindProductionProjectUpdateByProjectIDTableAdapter;
 
+        FindProductionProjectUpdatesForStatsDataSet aFindProductionProjectUpdatesForStatsDataSet;
+        FindProductionProjectUpdatesForStatsDataSetTableAdapters.FindProductionProjectUpdatesforStatsTableAdapter aFindProductionProjectUpdatesForStatsTableAdapter;
+
+        public FindProductionProjectUpdatesForStatsDataSet FindProductionProjectUpdatesForStats()
+        {
+            try
+            {
+                aFindProductionProjectUpdatesForStatsDataSet = new FindProductionProjectUpdatesForStatsDataSet();
+                aFindProductionProjectUpdatesForStatsTableAdapter = new FindProductionProjectUpdatesForStatsDataSetTableAdapters.FindProductionProjectUpdatesforStatsTableAdapter();
+                aFindProductionProjectUpdatesForStatsTableAdapter.Fill(aFindProductionProjectUpdatesForStatsDataSet.FindProductionProjectUpdatesforStats);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Production Project Updates Class // Find Production Project Updates for Stats " + Ex.Message);
+            }
+
+            return aFindProductionProjectUpdatesForStatsDataSet;
+        }
         public FindProductionProjectUpdateByProjectIDDataSet FindProductionProjectUpdateByProjectID(int intProjectID)
         {
             try
