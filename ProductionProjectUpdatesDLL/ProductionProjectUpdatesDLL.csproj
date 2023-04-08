@@ -45,6 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindLastProductionProjectUpdateForProjectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindLastProductionProjectUpdateForProjectDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindProductionProjectUpdateByProjectIDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -75,6 +80,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="FindLastProductionProjectUpdateForProjectDataSet.xsc">
+      <DependentUpon>FindLastProductionProjectUpdateForProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindLastProductionProjectUpdateForProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindLastProductionProjectUpdateForProjectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindLastProductionProjectUpdateForProjectDataSet.xss">
+      <DependentUpon>FindLastProductionProjectUpdateForProjectDataSet.xsd</DependentUpon>
+    </None>
     <None Include="FindProductionProjectUpdateByProjectIDDataSet.xsc">
       <DependentUpon>FindProductionProjectUpdateByProjectIDDataSet.xsd</DependentUpon>
     </None>
